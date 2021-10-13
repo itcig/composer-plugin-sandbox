@@ -1,0 +1,62 @@
+{
+	"name": "itcig/composer-plugin-sandbox",
+	"version": "0.1.0",
+	"description": "Sample composer plugin for testing monorepo development and releases.",
+	"type": "library",
+	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "ITCIG",
+			"email": "it@capinfogroup.com",
+			"homepage": "https://github.com/itcig"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/itcig/composer-plugin-sandbox/issues",
+		"source": "https://github.com/itcig/composer-plugin-sandbox"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"sort-packages": true
+	},
+	"repositories": [],
+	"scripts": {
+		"phpunit": [
+			"./vendor/phpunit/phpunit/phpunit --colors=always"
+		],
+		"test-coverage": [
+			"@composer update",
+			"phpdbg -d memory_limit=2048M -d max_execution_time=900 -qrr ./vendor/bin/phpunit --coverage-clover \"$COVERAGE_DIR/clover.xml\""
+		],
+		"test-php": [
+			"@composer update",
+			"@composer phpunit"
+		]
+	},
+	"require": {
+		"php": "^7.2 || ^8"
+	},
+	"require-dev": {
+		"itcig/php-coding-standards": "^0.1",
+		"itcig/phpunit": "^0.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Cig\\Test\\": "src"
+		}
+	},
+	"extra": {
+		"autotagger": true,
+		"autorelease": true,
+		"mirror-repo": "itcig/composer-plugin-sandbox",
+		"branch-alias": {
+			"dev-main": "0.1.x-dev"
+		},
+		"release-branch-prefix": "composer-plugin-sandbox",
+		"version-constants": {
+			"PACKAGE_VERSION": "src/index.php"
+		}
+	}
+}

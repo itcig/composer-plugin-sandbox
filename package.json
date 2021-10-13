@@ -1,0 +1,21 @@
+{
+	"name": "@itcig/composer-plugin-sandbox",
+	"description": "Sample composer plugin for testing monorepo development and releases.",
+	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
+	"bugs": {
+		"url": "https://github.com/itcig/itcig/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/itcig/composer-plugin-sandbox.git"
+	},
+	"license": "GPL-2.0-or-later",
+	"author": "Automattic",
+	"scripts": {
+		"build": "echo 'Not implemented.'",
+		"clean": "true",
+		"distclean": "rm -rf node_modules && yarn run clean",
+		"install-if-deps-outdated": "yarn install --no-prod --frozen-lockfile"
+	},
+	"devDependencies": {}
+}
