@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/composer-plugin-sandbox",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Sample composer plugin for testing monorepo development and releases.",
 	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
 	"bugs": {
@@ -17,6 +17,5 @@
 		"clean": "true",
 		"distclean": "rm -rf node_modules && yarn run clean",
 		"install-if-deps-outdated": "yarn install --no-prod --frozen-lockfile"
-	},
-	"devDependencies": {}
+	}
 }
