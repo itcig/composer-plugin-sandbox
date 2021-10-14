@@ -17,5 +17,17 @@
 		"clean": "true",
 		"distclean": "rm -rf node_modules && yarn run clean",
 		"install-if-deps-outdated": "yarn install --no-prod --frozen-lockfile"
+	},
+	"extra": {
+		"autotagger": true,
+		"autorelease": true,
+		"mirror-repo": "itcig/composer-plugin-sandbox",
+		"branch-alias": {
+			"dev-main": "0.1.x-dev"
+		},
+		"release-branch-prefix": "composer-plugin-sandbox",
+		"version-constants": {
+			"PACKAGE_VERSION": "src/index.php"
+		}
 	}
 }
