@@ -1,7 +1,12 @@
 {
 	"name": "@itcig/composer-plugin-sandbox",
 	"version": "0.2.0",
+	"license": "MIT",
 	"description": "Sample composer plugin for testing monorepo development and releases.",
+	"author": {
+		"name": "ITCIG",
+		"email": "it@capinfogroup.com"
+	},
 	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
 	"bugs": {
 		"url": "https://github.com/itcig/itcig/issues"
@@ -10,8 +15,6 @@
 		"type": "git",
 		"url": "https://github.com/itcig/composer-plugin-sandbox.git"
 	},
-	"license": "GPL-2.0-or-later",
-	"author": "Automattic",
 	"scripts": {
 		"build": "echo 'Not implemented.'",
 		"clean": "true",
