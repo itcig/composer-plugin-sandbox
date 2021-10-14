@@ -17,20 +17,20 @@ TAG="${GITHUB_REF#refs/tags/v}"
 echo "Creating release for $TAG"
 
 ## Determine slug and title format.
-if [[ ! -f composer.json ]]; then
-	echo '::error::No composer.json. Did it get excluded from the mirror?'
+if [[ ! -f package.json ]]; then
+	echo '::error::No package.json. Did it get excluded from the mirror?'
 	exit 1
 fi
 
-SLUG="$(jq -r '.extra.autorelease.slug // .extra["wp-plugin-slug"] // ( .name | sub( "^.*/"; "" ) )' composer.json)"
+SLUG="$(jq -r '.extra.autorelease.slug // .extra["wp-plugin-slug"] // ( .name | sub( "^.*/"; "" ) )' package.json)"
 if [[ -z "$SLUG" ]]; then
-	echo '::error::Failed to get slug from composer.json.'
+	echo '::error::Failed to get slug from package.json.'
 	exit 1
 fi
 echo "Using slug $SLUG"
 
-PACKAGE_NAME="$(jq -r '.name // "%s"' composer.json)"
-TITLEFMT="$(jq -r '.extra.autorelease.titlefmt // "%s"' composer.json)"
+PACKAGE_NAME="$(jq -r '.name // "%s"' package.json)"
+TITLEFMT="$(jq -r '.extra.autorelease.titlefmt // "%s"' package.json)"
 if [[ -z "$TITLEFMT"]]; then
   TITLEFMT="$PACKAGE_NAME %s"
 elif [[ "$TITLEFMT" != *"%s"* ]]; then

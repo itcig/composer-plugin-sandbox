@@ -46,17 +46,5 @@
 		"psr-4": {
 			"Cig\\Test\\": "src"
 		}
-	},
-	"extra": {
-		"autotagger": true,
-		"autorelease": true,
-		"mirror-repo": "itcig/composer-plugin-sandbox",
-		"branch-alias": {
-			"dev-main": "0.1.x-dev"
-		},
-		"release-branch-prefix": "composer-plugin-sandbox",
-		"version-constants": {
-			"PACKAGE_VERSION": "src/index.php"
-		}
 	}
 }

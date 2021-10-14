@@ -3,7 +3,7 @@ name: Auto-release
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - 'v*'
 
 jobs:
   publish:
