@@ -2,8 +2,8 @@
 
 set -eo pipefail
 
-VER=$(sed -nEe 's/^## \[?([^]]*)\]? - .*/\1/;T;p;q' CHANGELOG.md || true)
-echo "Version from changelog is ${VER:-<unknown>}"
+VER=$(jq -r '.version' "$PLUGIN_DIR/package.json")
+echo "Version from package.json is ${VER:-<unknown>}"
 if [[ "$VER" =~ ^[0-9]+(\.[0-9]+)+$ ]]; then
 
     ## Determine branch
@@ -28,7 +28,7 @@ if [[ "$VER" =~ ^[0-9]+(\.[0-9]+)+$ ]]; then
     export GIT_COMMITTER_EMAIL=cig-bot@users.noreply.github.com
     git tag "v$VER"
     git push origin "v$VER"
-    if [[ -e composer.json ]] && jq -e '.extra.autotagger.major?' composer.json >/dev/null; then
+    if [[ -e package.json ]] && jq -e '.extra.autotagger.major?' package.json >/dev/null; then
       git tag --force "v${VER%%.*}"
       git push --force origin "v${VER%%.*}"
     fi
