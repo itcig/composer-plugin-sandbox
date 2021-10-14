@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7482aad3522dc28862c4c89dfa7af8f",
+    "content-hash": "b720b878257815a0ed8175a33536d212",
     "packages": [],
     "packages-dev": [
         {
@@ -321,7 +321,7 @@
             "dist": {
                 "type": "path",
                 "url": "../php-coding-standards",
-                "reference": "13cb176f5320dd7426d045584c40170ad17655e5"
+                "reference": "4baa556dd7c14372c80ec4f9ed05dcde3442cedd"
             },
             "require": {
                 "php": "^7.2 || ^8",
@@ -342,13 +342,6 @@
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
             "type": "phpcodesniffer-standard",
-            "extra": {
-                "autotagger": true,
-                "mirror-repo": "itcig/php-coding-standards",
-                "branch-alias": {
-                    "dev-main": "0.1.x-dev"
-                }
-            },
             "scripts": {
                 "check-complete": [
                     "@php ./vendor/phpcsstandards/phpcsdevtools/bin/phpcs-check-feature-completeness -q ./CIG"
@@ -407,7 +400,7 @@
             "dist": {
                 "type": "path",
                 "url": "../phpunit",
-                "reference": "99a01f80c41101fe82f5a61b85a2e33244ebf7df"
+                "reference": "817ccdb3145b8c17eda654d9914141d782b40b0b"
             },
             "require": {
                 "brain/monkey": "^2.0",
@@ -418,18 +411,6 @@
                 "itcig/php-coding-standards": "^0.1"
             },
             "type": "library",
-            "extra": {
-                "autotagger": true,
-                "autorelease": true,
-                "mirror-repo": "itcig/phpunit",
-                "branch-alias": {
-                    "dev-main": "0.1.x-dev"
-                },
-                "release-branch-prefix": "phpunit",
-                "version-constants": {
-                    "PACKAGE_VERSION": "phpunit.php"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Cig\\PHPUnit\\": "."
