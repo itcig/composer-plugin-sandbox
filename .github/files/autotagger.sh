@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-VER=$(jq -r '.version' "$PLUGIN_DIR/package.json")
+VER=$(jq -r '.version' "package.json")
 echo "Version from package.json is ${VER:-<unknown>}"
 if [[ "$VER" =~ ^[0-9]+(\.[0-9]+)+$ ]]; then
 
