@@ -55,7 +55,7 @@ if [[ ! -f CHANGELOG.md ]]; then
 	exit 1
 fi
 SCRIPT="
-	/^## \\[?$(sed 's/[.\[\]\\*^$\/()+?{}|]/\\&/g' <<<"${TAG#v}")\\]? - / {
+	/^## \\[?$(sed 's/[.\[\]\\*^$\/()+?{}|]/\\&/g' <<<"${TAG}")\\]?/ {
 		bc
 		:a
 		n
@@ -98,7 +98,6 @@ echo "::group::Creating release"
 curl -v -L \
 	--write-out '%{response_code}' \
 	--output out.json \
-	--request POST \
 	--header "authorization: Bearer $API_TOKEN_GITHUB" \
 	--header 'content-type: application/json' \
 	--header 'accept: application/vnd.github.v3+json' \
@@ -112,7 +111,6 @@ echo "::endgroup::"
 
 echo "::group::Uploading artifact to release"
 curl -v --fail -L \
-	--request POST \
 	--header "authorization: Bearer $API_TOKEN_GITHUB" \
 	--header "content-type: application/zip" \
 	--url "$(jq -r '.upload_url | sub( "{\\?[^}]*}$"; "" )' out.json)?name=$SLUG.zip" \
