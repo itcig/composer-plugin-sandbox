@@ -108,7 +108,7 @@ curl -v -L \
 	--header 'content-type: application/json' \
 	--header 'accept: application/vnd.github.v3+json' \
 	--url "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/releases" \
-	--data "$(jq -n --arg tag "v$TAG" --arg sha "$GITHUB_SHA" --arg title "$TITLE" --arg body "$ENTRY" --arg isprerelease $ISPRERELEASE '{ tag_name: $tag, target_commitish: $sha, name: $title, body: $body, prerelease: $isprerelease}')" \
+	--data "$(jq -n --arg tag "v$TAG" --arg sha "$GITHUB_SHA" --arg title "$TITLE" --arg body "$ENTRY" --argjson isprerelease $ISPRERELEASE '{ tag_name: $tag, target_commitish: $sha, name: $title, body: $body, prerelease: $isprerelease}')" \
 	2>&1 > code.txt
 cat out.json
 echo
