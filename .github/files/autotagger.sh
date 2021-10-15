@@ -4,7 +4,7 @@ set -eo pipefail
 
 VER=$(jq -r '.version' "package.json")
 echo "Version from package.json is ${VER:-<unknown>}"
-if [[ "$VER" =~ ^[0-9]+(\.[0-9]+)+$ ]]; then
+if [[ "$VER" =~ ^[0-9]+(\.[0-9]+)+.*$ ]]; then
 
     # Prefix tag with `v`
     VER="v$VER"
