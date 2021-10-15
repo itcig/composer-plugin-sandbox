@@ -6,21 +6,10 @@ VER=$(jq -r '.version' "package.json")
 echo "Version from package.json is ${VER:-<unknown>}"
 if [[ "$VER" =~ ^[0-9]+(\.[0-9]+)+$ ]]; then
 
-    ## Determine branch
-    if [[ "$GITHUB_REF" =~ ^refs/heads/ ]]; then
-        BRANCH=${GITHUB_REF#refs/heads/}
-
-        if [[ "$BRANCH" = "main" ]]; then
-            VER="v$VER"
-        else
-            VER="v$VER-$BRANCH"
-        fi
-
-        echo "Creating tag for $VER"
-    else
-        echo "Could not determine branch name for tagging from $GITHUB_REF"
-        exit 1
-    fi
+    # Prefix tag with `v`
+    VER="v$VER"
+    
+    echo "Creating tag for $VER"
 
     export GIT_AUTHOR_NAME=cig-bot
     export GIT_AUTHOR_EMAIL=cig-bot@users.noreply.github.com
