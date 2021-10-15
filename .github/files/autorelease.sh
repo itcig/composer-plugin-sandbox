@@ -48,9 +48,9 @@ echo "::endgroup::"
 
 # If tag contains `-dev` then assume it is a pre-release
 if [[ "$TAG" =~ \-dev ]]; then
-  ISPRERELEASE=true
+  ISPRERELEASE=1
 else
-  ISPRERELEASE=false
+  ISPRERELEASE=0
 fi
 
 ## Create the release note.
