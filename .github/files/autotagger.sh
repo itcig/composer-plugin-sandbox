@@ -8,7 +8,7 @@ if [[ "$VER" =~ ^[0-9]+(\.[0-9]+)+$ ]]; then
 
     # Prefix tag with `v`
     VER="v$VER"
-    
+
     echo "Creating tag for $VER"
 
     export GIT_AUTHOR_NAME=cig-bot
