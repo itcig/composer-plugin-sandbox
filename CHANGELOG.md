@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.6-dev.3](https://github.com/itcig/composer-plugin-sandbox/compare/@itcig/composer-plugin-sandbox@0.2.6-dev.2...@itcig/composer-plugin-sandbox@0.2.6-dev.3) (2021-10-15)
+
+**Note:** Version bump only for package @itcig/composer-plugin-sandbox
+
+
+
+
+
 ## [0.2.6-dev.2](https://github.com/itcig/composer-plugin-sandbox/compare/@itcig/composer-plugin-sandbox@0.2.6-dev.1...@itcig/composer-plugin-sandbox@0.2.6-dev.2) (2021-10-15)
 
 **Note:** Version bump only for package @itcig/composer-plugin-sandbox

@@ -23,7 +23,7 @@ if [[ ! -f package.json ]]; then
 	exit 1
 fi
 
-SLUG="$(jq -r '.extra.autorelease.slug // .extra["wp-plugin-slug"] // ( .name | sub( "^.*/"; "" ) )' package.json)"
+SLUG="$(jq -r '.extra.autorelease | if type=="object" then .slug else null end // ( .name | sub( "^.*/"; "" ) )' package.json)"
 if [[ -z "$SLUG" ]]; then
 	echo '::error::Failed to get slug from package.json.'
 	exit 1
@@ -31,7 +31,7 @@ fi
 echo "Using slug $SLUG"
 
 PACKAGE_NAME="$(jq -r '.name // "%s"' package.json)"
-TITLEFMT="$(jq -r '.extra.autorelease.titlefmt // "%s"' package.json)"
+TITLEFMT="$(jq -r '.extra.autorelease | if type=="object" then .titlefmt else null end // "%s"' package.json)"
 if [[ -z "$TITLEFMT"]]; then
   TITLEFMT="$PACKAGE_NAME %s"
 elif [[ "$TITLEFMT" != *"%s"* ]]; then
