@@ -46,6 +46,13 @@ echo "::group::Creating $SLUG.zip"
 git archive -v --output="$SLUG.zip" --prefix="$SLUG/" HEAD 2>&1
 echo "::endgroup::"
 
+# If tag contains `-dev` then assume it is a pre-release
+if [[ "$TAG" =~ \-dev ]]; then
+  ISPRERELEASE=true
+else
+  ISPRERELEASE=false
+fi
+
 ## Create the release note.
 # Extract the changelog section.
 echo "::group::Extracting release notes"
@@ -63,7 +70,6 @@ SCRIPT="
 			q
 		}
 		:c
-		s/^## \[([^]]+)\]/## \1/
 		p
 		ba
 	}
@@ -102,7 +108,7 @@ curl -v -L \
 	--header 'content-type: application/json' \
 	--header 'accept: application/vnd.github.v3+json' \
 	--url "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/releases" \
-	--data "$(jq -n --arg tag "v$TAG" --arg sha "$GITHUB_SHA" --arg title "$TITLE" --arg body "$ENTRY" '{ tag_name: $tag, target_commitish: $sha, name: $title, body: $body}')" \
+	--data "$(jq -n --arg tag "v$TAG" --arg sha "$GITHUB_SHA" --arg title "$TITLE" --arg body "$ENTRY" --arg isprerelease $ISPRERELEASE '{ tag_name: $tag, target_commitish: $sha, name: $title, body: $body, prerelease: $isprerelease}')" \
 	2>&1 > code.txt
 cat out.json
 echo
