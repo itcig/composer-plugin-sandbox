@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/composer-plugin-sandbox",
-	"version": "0.2.6-dev.4",
+	"version": "0.2.6-dev.5",
 	"license": "MIT",
 	"description": "Sample composer plugin for testing monorepo development and releases.",
 	"author": {
