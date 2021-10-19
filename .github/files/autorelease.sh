@@ -46,8 +46,8 @@ echo "::group::Creating $SLUG.zip"
 git archive -v --output="$SLUG.zip" --prefix="$SLUG/" HEAD 2>&1
 echo "::endgroup::"
 
-# If tag contains `-dev` then assume it is a pre-release
-if [[ "$TAG" =~ \-dev ]]; then
+# If tag contains `-alpha` then assume it is a pre-release
+if [[ "$TAG" =~ \-alpha ]]; then
   ISPRERELEASE=true
 else
   ISPRERELEASE=false

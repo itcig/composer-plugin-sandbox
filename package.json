@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/composer-plugin-sandbox",
-	"version": "0.2.7-dev.3",
+	"version": "0.2.7-alpha.0",
 	"license": "MIT",
 	"description": "Sample composer plugin for testing monorepo development and releases.",
 	"author": {
@@ -25,9 +25,6 @@
 		"autotagger": true,
 		"autorelease": true,
 		"mirror-repo": "itcig/composer-plugin-sandbox",
-		"branch-alias": {
-			"dev-main": "0.1.x-dev"
-		},
 		"version-constants": {
 			"PACKAGE_VERSION": "src/index.php"
 		}

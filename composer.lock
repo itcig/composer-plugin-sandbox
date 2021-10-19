@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b720b878257815a0ed8175a33536d212",
+    "content-hash": "74900568f250cba5033624fe9b0f09f8",
     "packages": [],
     "packages-dev": [
         {
@@ -317,11 +317,11 @@
         },
         {
             "name": "itcig/php-coding-standards",
-            "version": "0.1.0",
+            "version": "0.2.6-alpha.0",
             "dist": {
                 "type": "path",
                 "url": "../php-coding-standards",
-                "reference": "4baa556dd7c14372c80ec4f9ed05dcde3442cedd"
+                "reference": "5403d9d8a0ce0f4c1dd3cee16f64ff5e0abbe6bc"
             },
             "require": {
                 "php": "^7.2 || ^8",
@@ -342,6 +342,11 @@
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
             "type": "phpcodesniffer-standard",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.2.x-dev"
+                }
+            },
             "scripts": {
                 "check-complete": [
                     "@php ./vendor/phpcsstandards/phpcsdevtools/bin/phpcs-check-feature-completeness -q ./CIG"
@@ -396,11 +401,11 @@
         },
         {
             "name": "itcig/phpunit",
-            "version": "0.1.1",
+            "version": "0.2.6-alpha.0",
             "dist": {
                 "type": "path",
                 "url": "../phpunit",
-                "reference": "817ccdb3145b8c17eda654d9914141d782b40b0b"
+                "reference": "2605d67c6c36efc8913511c4c0662409d942d8c9"
             },
             "require": {
                 "brain/monkey": "^2.0",
@@ -408,9 +413,14 @@
                 "phpunit/phpunit": "^9.0"
             },
             "require-dev": {
-                "itcig/php-coding-standards": "^0.1"
+                "itcig/php-coding-standards": "^0.2"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Cig\\PHPUnit\\": "."
