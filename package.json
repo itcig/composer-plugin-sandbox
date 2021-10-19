@@ -8,9 +8,6 @@
 		"email": "it@capinfogroup.com"
 	},
 	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
-	"bugs": {
-		"url": "https://github.com/itcig/itcig/issues"
-	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/itcig/composer-plugin-sandbox.git"
@@ -20,6 +17,9 @@
 		"clean": "true",
 		"distclean": "rm -rf node_modules && yarn run clean",
 		"install-if-deps-outdated": "yarn install --no-prod --frozen-lockfile"
+	},
+	"bugs": {
+		"url": "https://github.com/itcig/itcig/issues"
 	},
 	"extra": {
 		"autotagger": true,
