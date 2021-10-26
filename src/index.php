@@ -7,6 +7,6 @@
 
 namespace Cig\Test;
 
-define('PACKAGE_VERSION', '0.3.1');
+define('PACKAGE_VERSION', '0.3.2');
 
 echo 'new test';
