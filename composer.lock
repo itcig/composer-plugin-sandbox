@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99aa242dd0e18e6ab72253d4b1429178",
+    "content-hash": "432c19760fc3da7b0965102143315e0c",
     "packages": [],
     "packages-dev": [
         {
@@ -317,11 +317,11 @@
         },
         {
             "name": "itcig/php-coding-standards",
-            "version": "0.2.10",
+            "version": "0.2.11",
             "dist": {
                 "type": "path",
                 "url": "../php-coding-standards",
-                "reference": "8fc850c942dd6f7ab735792d0b12af5ff4ec3655"
+                "reference": "9267f4860ed5423a74f2909942d9219a4743c147"
             },
             "require": {
                 "php": "^7.2 || ^8",
@@ -392,11 +392,11 @@
         },
         {
             "name": "itcig/phpunit",
-            "version": "0.2.10",
+            "version": "0.2.11",
             "dist": {
                 "type": "path",
                 "url": "../phpunit",
-                "reference": "9354250e6f9dcd323855768cbc36a1d5e7cd38f7"
+                "reference": "4b55967bea1ab2df4c9b490d5564321bb13f88e3"
             },
             "require": {
                 "brain/monkey": "^2.0",
