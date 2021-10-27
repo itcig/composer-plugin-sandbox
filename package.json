@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/composer-plugin-sandbox",
-	"version": "0.3.5",
+	"version": "0.3.6",
 	"license": "MIT",
 	"description": "Sample composer plugin for testing monorepo development and releases.",
 	"author": {
@@ -10,8 +10,7 @@
 	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/itcig/itcig.git",
-		"directory": "packages/php-packages/composer-plugin-sandbox"
+		"url": "git+https://github.com/itcig/composer-plugin-sandbox.git"
 	},
 	"scripts": {
 		"build": "echo 'Not implemented.'",
