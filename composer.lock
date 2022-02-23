@@ -8,14 +8,18 @@
     "packages": [
         {
             "name": "itcig/php-helpers",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "dist": {
                 "type": "path",
                 "url": "../php-helpers",
-                "reference": "3a45e65632639aa2589ca2215c7df91a62016238"
+                "reference": "13994301aa38b8cdf880774a050cbea0e85af5b9"
             },
             "require": {
                 "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "itcig/php-coding-standards": "^0.2",
+                "itcig/phpunit": "^0.2"
             },
             "type": "library",
             "extra": {
@@ -453,15 +457,14 @@
         },
         {
             "name": "itcig/phpunit",
-            "version": "0.2.19",
+            "version": "0.2.20",
             "dist": {
                 "type": "path",
                 "url": "../phpunit",
-                "reference": "d4d34cc2dd532ead9caeb0535078c9106567242f"
+                "reference": "5ba4be9f255673077b06c93b53727f11173cb844"
             },
             "require": {
                 "brain/monkey": "^2.0",
-                "itcig/php-helpers": "^1.3",
                 "php": "^7.2 || ^8",
                 "phpunit/phpunit": "^9.0"
             },
