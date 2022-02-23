@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a54e148591682a79215b1cce7f8d1958",
+    "content-hash": "63a1b4a719b0bc0515a544a1504662ca",
     "packages": [
         {
             "name": "itcig/php-helpers",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "dist": {
                 "type": "path",
                 "url": "../php-helpers",
-                "reference": "601f183b7a339445dfac83f21b78d8cedd5fc93a"
+                "reference": "914e72a8ca7ab993b9b1f627985e62e996d16c3a"
             },
             "require": {
                 "php": "^7.2 || ^8.0"
@@ -20,7 +20,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.2.x-dev"
+                    "dev-main": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -382,11 +382,11 @@
         },
         {
             "name": "itcig/php-coding-standards",
-            "version": "0.2.15",
+            "version": "0.2.17",
             "dist": {
                 "type": "path",
                 "url": "../php-coding-standards",
-                "reference": "d0f80964b01f86b180d6c60acd925b146610ad02"
+                "reference": "b466a73918fe36d72ac5acea2e2b12726c9e5b65"
             },
             "require": {
                 "php": "^7.2 || ^8",
@@ -453,15 +453,15 @@
         },
         {
             "name": "itcig/phpunit",
-            "version": "0.2.16",
+            "version": "0.2.18",
             "dist": {
                 "type": "path",
                 "url": "../phpunit",
-                "reference": "d6f2e3aceb2673b7b9d3e5f6fb681b35df731d89"
+                "reference": "882874180f4a6a3ab6c9c773deeb85fd07565767"
             },
             "require": {
                 "brain/monkey": "^2.0",
-                "itcig/php-helpers": "^1.2",
+                "itcig/php-helpers": "^1.3",
                 "php": "^7.2 || ^8",
                 "phpunit/phpunit": "^9.0"
             },
