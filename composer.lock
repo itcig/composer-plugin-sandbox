@@ -4,8 +4,68 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f133d4a4797811611abd253ed327503d",
-    "packages": [],
+    "content-hash": "a54e148591682a79215b1cce7f8d1958",
+    "packages": [
+        {
+            "name": "itcig/php-helpers",
+            "version": "1.2.0",
+            "dist": {
+                "type": "path",
+                "url": "../php-helpers",
+                "reference": "601f183b7a339445dfac83f21b78d8cedd5fc93a"
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/index.php"
+                ],
+                "psr-4": {
+                    "Cig\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Cig\\Tests\\": "tests/phpunit"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "./vendor/bin/phpunit --colors=always"
+                ],
+                "test": [
+                    "@composer phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ITCIG",
+                    "email": "it@capinfogroup.com",
+                    "homepage": "https://github.com/itcig"
+                }
+            ],
+            "description": "PHP helper methods",
+            "homepage": "https://github.com/itcig/phpunit",
+            "support": {
+                "issues": "https://github.com/itcig/php-helpers/issues",
+                "source": "https://github.com/itcig/php-helpers"
+            },
+            "transport-options": {
+                "monorepo": true,
+                "relative": true
+            }
+        }
+    ],
     "packages-dev": [
         {
             "name": "antecedent/patchwork",
@@ -326,7 +386,7 @@
             "dist": {
                 "type": "path",
                 "url": "../php-coding-standards",
-                "reference": "0d1ac9fcf6681d9684eed62e459d3ab33f26de4b"
+                "reference": "d0f80964b01f86b180d6c60acd925b146610ad02"
             },
             "require": {
                 "php": "^7.2 || ^8",
@@ -338,8 +398,7 @@
                 "squizlabs/php_codesniffer": "^3.6"
             },
             "require-dev": {
-                "phpcsstandards/phpcsdevtools": "^1.0",
-                "phpunit/phpunit": "^9.0"
+                "phpcsstandards/phpcsdevtools": "^1.0"
             },
             "suggest": {
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
@@ -362,9 +421,6 @@
                 ],
                 "phpcs": [
                     "./vendor/bin/phpcs --report=summary --standard=phpcs.xml.dist"
-                ],
-                "test": [
-                    "./vendor/bin/phpunit --filter CIG ./vendor/squizlabs/php_codesniffer/tests/AllTests.php"
                 ]
             },
             "license": [
@@ -389,65 +445,6 @@
             "support": {
                 "issues": "https://github.com/itcig/phpcs/issues",
                 "source": "https://github.com/itcig/phpcs"
-            },
-            "transport-options": {
-                "monorepo": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "itcig/php-helpers",
-            "version": "1.2.0",
-            "dist": {
-                "type": "path",
-                "url": "../php-helpers",
-                "reference": "601f183b7a339445dfac83f21b78d8cedd5fc93a"
-            },
-            "require": {
-                "php": "^7.2 || ^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.2.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/index.php"
-                ],
-                "psr-4": {
-                    "Cig\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Cig\\Tests\\": "tests/phpunit"
-                }
-            },
-            "scripts": {
-                "phpunit": [
-                    "./vendor/bin/phpunit --colors=always"
-                ],
-                "test": [
-                    "@composer phpunit"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ITCIG",
-                    "email": "it@capinfogroup.com",
-                    "homepage": "https://github.com/itcig"
-                }
-            ],
-            "description": "PHP helper methods",
-            "homepage": "https://github.com/itcig/phpunit",
-            "support": {
-                "issues": "https://github.com/itcig/php-helpers/issues",
-                "source": "https://github.com/itcig/php-helpers"
             },
             "transport-options": {
                 "monorepo": true,
