@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e05fa06fc994ef1175329e6e2bbc0fe",
+    "content-hash": "aa898140faf0df31140e108dcf4e703e",
     "packages": [
         {
             "name": "itcig/php-helpers",

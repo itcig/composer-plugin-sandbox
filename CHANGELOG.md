@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.3.12-alpha.1](https://github.com/itcig/itcig/compare/@itcig/composer-plugin-sandbox@0.3.12-alpha.0...@itcig/composer-plugin-sandbox@0.3.12-alpha.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* **composer-plugin-sandbox:** test pre-release ([a16ac90](https://github.com/itcig/itcig/commit/a16ac908e8c26d5797ff977a2991790821d08312))
+
+
+
 ### [0.3.12-alpha.0](https://github.com/itcig/itcig/compare/@itcig/composer-plugin-sandbox@0.3.11...@itcig/composer-plugin-sandbox@0.3.12-alpha.0) (2022-03-09)
 
 
