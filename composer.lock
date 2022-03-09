@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa898140faf0df31140e108dcf4e703e",
+    "content-hash": "aef70c5bf0d266a6821d71ac9db83a07",
     "packages": [
         {
             "name": "itcig/php-helpers",
@@ -12,14 +12,14 @@
             "dist": {
                 "type": "path",
                 "url": "../php-helpers",
-                "reference": "6127b9fef74aff258ad90e26922c348105c8dd2d"
+                "reference": "6169d904a25abdc2c7e087c9a80b269a883a1a59"
             },
             "require": {
                 "php": "^7.2 || ^8.0"
             },
             "require-dev": {
                 "itcig/php-coding-standards": "^0.2",
-                "itcig/phpunit": "^0.2"
+                "itcig/phpunit": "^0.3"
             },
             "type": "library",
             "extra": {
@@ -457,11 +457,11 @@
         },
         {
             "name": "itcig/phpunit",
-            "version": "0.2.21",
+            "version": "0.3.0-alpha.0",
             "dist": {
                 "type": "path",
                 "url": "../phpunit",
-                "reference": "b1b524cce8d7ade213f5c7c61efca2b349766bf9"
+                "reference": "ac3627687c7023723e2ba2e85de8205dbbb6dc9b"
             },
             "require": {
                 "brain/monkey": "^2.0",
@@ -474,7 +474,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.2.x-dev"
+                    "dev-main": "0.3.x-dev"
                 }
             },
             "autoload": {
