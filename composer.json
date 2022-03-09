@@ -1,6 +1,6 @@
 {
 	"name": "itcig/composer-plugin-sandbox",
-	"version": "0.3.11",
+	"version": "0.3.12-alpha.0",
 	"description": "Sample composer plugin for testing monorepo development and releases.",
 	"type": "library",
 	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
