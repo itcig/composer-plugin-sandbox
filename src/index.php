@@ -7,6 +7,6 @@
 
 namespace Cig\Test;
 
-define('PACKAGE_VERSION', '0.3.12');
+define('PACKAGE_VERSION', '0.4.0');
 
 echo 'new test adsdasd';
