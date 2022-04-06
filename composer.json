@@ -1,6 +1,6 @@
 {
 	"name": "itcig/composer-plugin-sandbox",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"description": "Sample composer plugin for testing monorepo development and releases.",
 	"type": "library",
 	"homepage": "https://github.com/itcig/composer-plugin-sandbox",
@@ -40,11 +40,11 @@
 	},
 	"require": {
 		"php": "^7.2 || ^8",
-		"itcig/php-helpers": "^1.4"
+		"itcig/php-helpers": "^1.5"
 	},
 	"require-dev": {
-		"itcig/php-coding-standards": "^0.3",
-		"itcig/phpunit": "^0.3"
+		"itcig/php-coding-standards": "^0.4",
+		"itcig/phpunit": "^0.4"
 	},
 	"autoload": {
 		"psr-4": {
@@ -53,7 +53,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-main": "0.4.x-dev"
+			"dev-main": "0.5.x-dev"
 		}
 	}
 }
