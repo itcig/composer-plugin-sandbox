@@ -8,11 +8,11 @@
     "packages": [
         {
             "name": "itcig/php-helpers",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "dist": {
                 "type": "path",
                 "url": "../php-helpers",
-                "reference": "82984817f969086c5c62b3fd089b4da3c7882c5e"
+                "reference": "61a58efa073b74acf9dbc31bd81c92150fe7a199"
             },
             "require": {
                 "php": "^7.2 || ^8.0"
