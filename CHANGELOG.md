@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.1](https://github.com/itcig/itcig/compare/@itcig/composer-plugin-sandbox@0.5.0...@itcig/composer-plugin-sandbox@0.5.1) (2024-01-25)
+
+**Note:** Version bump only for package @itcig/composer-plugin-sandbox
+
+
+
+
+
 ## [0.5.0](https://github.com/itcig/itcig/compare/@itcig/composer-plugin-sandbox@0.4.0...@itcig/composer-plugin-sandbox@0.5.0) (2022-04-06)
 
 

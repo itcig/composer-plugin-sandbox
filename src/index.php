@@ -7,6 +7,8 @@
 
 namespace Cig\Test;
 
-define('PACKAGE_VERSION', '0.5.0');
+define('PACKAGE_VERSION', '0.5.1');
 
 echo 'new test adsdasd';
+
+echo 'will this trigger everything?';
